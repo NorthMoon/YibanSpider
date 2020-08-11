@@ -91,7 +91,7 @@ def login(account, passwd):
 #签到
 def checkin():
     checkin = requests.post('https://mobile.yiban.cn/api/v3/checkin/answer',verify=False, data={'access_token':access_token, 'optionId':'18030'}, headers=headers)
-    print('\n签到开始(网薪不固定，一般为2)')
+    print('\n签到开始(网薪不固定，一般+2)')
     print('正在进行签到....'+isDone(checkin))
     return
 
@@ -227,7 +227,7 @@ def topages():
         print('因为信息获取出错，此部分跳过！')
         return
         
-    print('\n即将访问机构和公共群群主页*100 (事实上只需要5次，但老是出现玄学所以直接怼100)')
+    print('\n即将访问机构和公共群群主页*100 (事实上只需要5次，但老是出现玄学情况所以直接怼100)')
     for i in range(100):
         #time.sleep(2)
         orgapage = requests.get('https://mobile.yiban.cn/api/v1/organizations/'+orgaid, params={'access_token':access_token}, verify=False, headers=headers)
@@ -505,12 +505,13 @@ def clear():
         deltopics()
     return
 def main():
-    print('NOTICE：\n\n1.密码加密轮子取自 LooyeaGee 链接：https://looyeagee.cn/software/yiban/ ')
-    print('2.此软件可模拟易班app进行一系列日常获取网薪的任务(签到、动态、博客等等。。)')
-    print('3.模拟环境：Redmi Note 7 Pro Android 10; app版本：4.7.11')
-    print('4.成功登录后将会退出你手机上的易班账号，但可以有效跳过PC端网页的验证码')
-    print('5.运行过程勿在手机app上登录！')
-    print('6.此软件仅供学习交流')
+    os.system("mode con cols=120 lines=40")
+    print('NOTICE：\n\n\t1.密码加密轮子取自 LooyeaGee 链接：https://looyeagee.cn/software/yiban/ ')
+    print('\t2.此软件可模拟易班app进行一系列日常获取网薪的任务(签到、动态、博客等等。。)')
+    print('\t3.模拟环境：Redmi Note 7 Pro Android 10; app版本：4.7.11')
+    print('\t4.成功登录后将会退出你手机上的易班账号，但可以有效跳过PC端网页的验证码')
+    print('\t5.运行过程勿在手机app上登录！')
+    print('\t6.此软件仅供学习交流 GitHub：https://github.com/ChanEKan/YibanSpider')
     while(True):
         account =  input('\n\n账号：\t')
         passwd = input('密码：\t')
