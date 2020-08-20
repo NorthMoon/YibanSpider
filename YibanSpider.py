@@ -63,7 +63,7 @@ def login(account, passwd):
        }
     
     login_josn = requests.get('https://mobile.yiban.cn/api/v2/passport/login', params=form_data, verify=False)
-    print('登陆'+isDone(login_josn))
+
     try:
         login_info_dict = json.loads(login_josn.text)
         
@@ -85,7 +85,9 @@ def login(account, passwd):
         }
         return True
     except:
-        print('登录出错了，请重试')
+        print('登录中....'+isDone(login_josn))
+        print('登录出错，请重试')
+        
         return False
         #exit(-1)
 #签到
