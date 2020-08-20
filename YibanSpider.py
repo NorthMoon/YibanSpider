@@ -507,11 +507,12 @@ def clear():
 def main():
     os.system("mode con cols=120 lines=40")
     print('NOTICE：\n\n\t1.密码加密轮子取自 LooyeaGee 链接：https://looyeagee.cn/software/yiban/ ')
-    print('\t2.此软件可模拟易班app进行一系列日常获取网薪的任务(签到、动态、博客等等。。)')
-    print('\t3.模拟环境：Redmi Note 7 Pro Android 10; app版本：4.7.11')
-    print('\t4.成功登录后将会退出你手机上的易班账号，但可以有效跳过PC端网页的验证码')
-    print('\t5.运行过程勿在手机app上登录！')
-    print('\t6.此软件仅供学习交流 GitHub：https://github.com/ChanEKan/YibanSpider')
+    print('\t2.古诗词接口采用 一言·古诗词 API 链接：https://github.com/xenv/gushici/')
+    print('\t3.此软件可模拟易班app进行一系列日常获取网薪的任务(签到、动态、博客等等。。)')
+    print('\t4.模拟环境：Redmi Note 7 Pro Android 10; app版本：4.7.11')
+    print('\t5.成功登录后将会退出你手机上的易班账号，但可以有效跳过PC端网页的验证码')
+    print('\t6.运行过程勿在手机app上登录！')
+    print('\t7.此软件仅供学习交流 GitHub：https://github.com/ChanEKan/YibanSpider')
     while(True):
         account =  input('\n\n账号：\t')
         passwd = input('密码：\t')
