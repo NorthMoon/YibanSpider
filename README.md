@@ -1,7 +1,5 @@
 # YibanSpider
-模拟易班安卓app获取网薪
-密码加密轮子取自 LooyeaGee 链接：https://looyeagee.cn/software/yiban/
-古诗词接口采用 一言·古诗词 API 链接：https://github.com/xenv/gushici/
+模拟易班安卓app获取网薪  
 ### 功能：
   * 登录
   * 答题签到
@@ -28,3 +26,7 @@
     - 发布
     - 点赞
     - 删除
+
+
+密码加密轮子取自 LooyeaGee 链接：https://looyeagee.cn/software/yiban/   
+古诗词接口采用 一言·古诗词 API 链接：https://github.com/xenv/gushici/
